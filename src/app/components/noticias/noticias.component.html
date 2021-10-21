@@ -1,14 +1,15 @@
 <ion-grid fixed>
     <ion-row>
-
-
         <ion-col size="12" size-lg="3" size-md="4" size-sm="6"
                 *ngFor="let noticia of noticias; let i = index">
 
-                <app-noticia [i]="i" [noticia]="noticia"></app-noticia>
+
+            <app-noticia [esPaginaFavoritos]="esPaginaFavoritos" 
+                         [i]="i" 
+                         [noticia]="noticia">
+            </app-noticia>
+
 
         </ion-col>
-
-
     </ion-row>
 </ion-grid>
